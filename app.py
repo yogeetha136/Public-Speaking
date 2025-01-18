@@ -162,6 +162,9 @@ def upload_file():
     if file.filename == '':
         flash('No selected file')
         return redirect(request.url)
+    
+
+    
 
     if file:
         video_path = os.path.join('uploads', file.filename)
